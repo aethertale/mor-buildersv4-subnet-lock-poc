@@ -66,10 +66,9 @@ A passing run is logged in `output-fork-59534749.txt`.
 ## Honest scope note
 
 No subnet is frozen on mainnet today. Across all 15 historical
-`SubnetEdited` events, every edit set a standard lock (7 days, or 30 days
-for Lumerin) equal to the subnet's current lock — no abnormal lock was
-ever set. In the 9 edits where the creation lock is also verified, the
-edit set exactly the creation value; the other 6 edits (Lumerin,
-MOR Phoenix Pool, MORDIEM, Own Your Mind x3) set the same standard lock
-the subnet still has today. This PoC proves a latent capability plus live
-third-party exposure, not an ongoing incident.
+`SubnetEdited` events, no lock was ever raised above its creation value
+— verified for 13 of 15 edits (8 subnets, including every funded subnet);
+the other 2 edits (Lumerin, MOR Phoenix Pool) are in empty subnets with
+0 MOR deposited, so no victim is possible there regardless. This PoC
+proves a latent capability plus live third-party exposure, not an ongoing
+incident.
