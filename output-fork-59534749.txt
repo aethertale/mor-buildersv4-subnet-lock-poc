@@ -1,0 +1,25 @@
+No files changed, compilation skipped
+
+Ran 5 tests for test/H_BV4_01.t.sol:HBV401Test
+[PASS] test_adminCanReleaseSoItIsRansomLeverage() (gas: 591812)
+Logs:
+  after admin lowers lock, withdraw works again
+
+[PASS] test_adminRaiseLocksVictimFunds() (gas: 687772)
+Logs:
+  control: withdraw 50 MOR ok before edit
+  admin raised withdrawLockPeriodAfterDeposit to 1e30
+  victim frozen: 950 MOR stuck in BuildersV4
+
+[PASS] test_liveConfig() (gas: 13892)
+Logs:
+  minimalWithdrawLockPeriod live: 604800 (7d)
+
+[PASS] test_maxLockPanicsButStillFreezes() (gas: 358790)
+Logs:
+  lock == uint128.max -> withdraw reverts (overflow panic), still frozen
+
+[PASS] test_onlyAdminCanEdit() (gas: 43936)
+Suite result: ok. 5 passed; 0 failed; 0 skipped; finished in 1.26s (19.56ms CPU time)
+
+Ran 1 test suite in 1.26s (1.26s CPU time): 5 tests passed, 0 failed, 0 skipped (5 total tests)
